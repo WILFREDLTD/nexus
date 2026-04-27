@@ -53,7 +53,7 @@ export default function Navbar() {
   return (
     <>
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Outfit:wght@600;700;800&display=swap');
 
         @keyframes fadeSlideDown {
           from { opacity: 0; transform: translateY(-8px); }
@@ -124,20 +124,32 @@ export default function Navbar() {
           box-shadow: 0 0 24px rgba(74,222,128,0.4);
           transform: translateY(-1px);
         }
+
+        .brand-name {
+          background: linear-gradient(135deg, #4ade80 0%, #22d3ee 50%, #4ade80 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-size: 1.125rem;
+          font-weight: 800;
+          letter-spacing: -0.5px;
+          text-shadow: 0 0 30px rgba(74,222,128,0.3);
+          filter: drop-shadow(0 4px 12px rgba(34,211,238,0.15));
+        }
       `}</style>
 
       <nav
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
           background: scrolled
-            ? "rgba(5, 13, 10, 0.92)"
-            : "rgba(5, 13, 10, 0.75)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
+            ? "linear-gradient(135deg, rgba(5, 13, 10, 0.95) 0%, rgba(10, 25, 18, 0.92) 50%, rgba(5, 13, 10, 0.95) 100%)"
+            : "linear-gradient(135deg, rgba(5, 13, 10, 0.85) 0%, rgba(10, 25, 18, 0.82) 50%, rgba(5, 13, 10, 0.85) 100%)",
+          backdropFilter: "blur(25px)",
+          WebkitBackdropFilter: "blur(25px)",
           borderBottom: scrolled
-            ? "1px solid rgba(74,222,128,0.15)"
-            : "1px solid rgba(74,222,128,0.06)",
-          boxShadow: scrolled ? "0 4px 32px rgba(0,0,0,0.4)" : "none",
+            ? "1px solid rgba(74,222,128,0.2)"
+            : "1px solid rgba(74,222,128,0.1)",
+          boxShadow: scrolled ? "0 8px 40px rgba(74,222,128,0.15), 0 0 1px rgba(34,211,238,0.2)" : "0 4px 20px rgba(0,0,0,0.2)",
         }}
       >
         {/* Subtle top border glow */}
@@ -165,18 +177,18 @@ export default function Navbar() {
                   }}
                 />
                 <Image
-                  src="/nexus.png"
-                  alt="Nexus"
+                  src="/vico.png"
+                  alt="vico softwares"
                   width={200}
                   height={100}
                   className="relative w-auto h-9 md:h-11 object-contain rounded-full transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <span
-                className="text-lg font-black text-white hidden sm:block tracking-tight"
-                style={{ fontFamily: "'Syne', sans-serif" }}
+                className="brand-name hidden sm:block"
+                style={{ fontFamily: "'Outfit', sans-serif" }}
               >
-                Nexus
+                vico softwares
               </span>
             </Link>
 
@@ -350,12 +362,12 @@ export default function Navbar() {
               style={{ borderColor: "rgba(74,222,128,0.1)" }}
             >
               <Link href="/" className="flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                <Image src="/nexus.png" alt="Nexus" width={100} height={100} className="w-8 h-8 rounded-full" />
+                <Image src="/vico.png" alt="vico softwares" width={100} height={100} className="w-8 h-8 rounded-full" />
                 <span
                   className="text-base font-black text-white"
                   style={{ fontFamily: "'Syne', sans-serif" }}
                 >
-                  Nexus
+                  vico softwares
                 </span>
               </Link>
               <button

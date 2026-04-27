@@ -176,8 +176,8 @@ export default function Footer() {
                   style={{ background: "linear-gradient(135deg, #4ade80, #22d3ee)" }}
                 />
                 <Image
-                  src="/nexus.png"
-                  alt="Nexus"
+                  src="/vico.png"
+                  alt="vico softwares"
                   width={500}
                   height={500}
                   className="relative w-11 h-11 rounded-full border border-green-500/30"
@@ -187,7 +187,7 @@ export default function Footer() {
                 className="text-xl font-black text-white"
                 style={{ fontFamily: "'Syne', sans-serif" }}
               >
-                Nexus
+                vico softwares
               </span>
             </div>
 
@@ -278,7 +278,7 @@ export default function Footer() {
               className="font-bold text-transparent bg-clip-text"
               style={{ backgroundImage: "linear-gradient(135deg, #4ade80, #22d3ee)" }}
             >
-              Nexus
+              vico softwares
             </span>
             {" "}· All rights reserved · Engineered in Africa.
           </p>

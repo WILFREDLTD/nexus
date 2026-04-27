@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nexus",
+  title: "vico softwares",
   description:
-    "Nexus delivers innovative digital solutions that help businesses thrive in a rapidly evolving technological landscape.",
+    "vico softwares delivers innovative digital solutions that help businesses thrive in a rapidly evolving technological landscape.",
 };
 
 export default function RootLayout({

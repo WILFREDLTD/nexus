@@ -37,3 +37,36 @@
     @apply text-base md:text-lg leading-relaxed;
   }
 }
+
+/* Green Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 15, 20, 0.4);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #22c55e 0%, #4ade80 50%, #22d3ee 100%);
+  border-radius: 10px;
+  border: 2px solid rgba(10, 15, 20, 0.6);
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #16a34a 0%, #22c55e 50%, #06b6d4 100%);
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.6), inset 0 0 6px rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(10, 15, 20, 0.4);
+}
+
+/* Firefox Scrollbar */
+html {
+  scrollbar-color: #22c55e rgba(10, 15, 20, 0.4);
+  scrollbar-width: auto;
+}
